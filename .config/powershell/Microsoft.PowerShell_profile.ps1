@@ -1,3 +1,7 @@
+# Override locale in power
+[System.Globalization.CultureInfo]::DefaultThreadCurrentUICulture = [System.Globalization.CultureInfo]::CreateSpecificCulture("fr-CA")
+[System.Globalization.CultureInfo]::DefaultThreadCurrentCulture = [System.Globalization.CultureInfo]::CreateSpecificCulture("fr-CA")
+
 Set-PSReadLineOption -EditMode Emacs
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadlineOption -ShowToolTips
