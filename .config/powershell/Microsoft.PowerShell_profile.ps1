@@ -16,6 +16,11 @@ Set-Alias unmute Set-SoundUnmute
 # Update installed Ruby Gems, NPM, and their installed packages.
 Set-Alias update System-Update
 
+# Just in case ImageMagick import-im6.q16 is on the system.  It might
+# freeze the session if used with application policies (e.f. loading
+# ps1 file in ImageMagick)
+Set-Alias import "import"
+
 $env:PWSH_MODULES = @(
     "ExchangeOnlineManagement",
     "Microsoft.PowerShell.ConsoleGuiTools",
