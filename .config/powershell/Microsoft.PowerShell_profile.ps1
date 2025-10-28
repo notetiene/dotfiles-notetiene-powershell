@@ -21,6 +21,8 @@ Set-Alias update System-Update
 # ps1 file in ImageMagick)
 Set-Alias import "import"
 
+Set-Alias el "emacsclient"
+
 $env:PWSH_MODULES = @(
     "ExchangeOnlineManagement",
     "Microsoft.PowerShell.ConsoleGuiTools",
